@@ -1,0 +1,8 @@
+### 헬로
+GET http://localhost:8080
+
+### 테스트 데이터 생성
+POST http://localhost:8080/user
+
+### 테스트 데이터 조회
+GET http://localhost:8080/1

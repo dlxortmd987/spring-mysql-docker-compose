@@ -18,9 +18,16 @@ docker build . -t testapp
 ```shell
 docker run -p 8080:8080 --name testapp --network springboot-mysql-net -d testapp
 ```
-### 테스트 방법
+
+## docker-compose 를 통한 프로젝트 구동 방법
+```shell
+docker-compose up -d
+```
+
+## 테스트 방법 
+- src/main/resources/test.http 파일 참조
 0. (GET) http://localhost:8080 호출
-    -> hello 가 나오면 성공
+   -> hello 가 나오면 성공
 1. (POST) http://localhost:8080/user 호출
 2. (GET) http://localhost:8080/1 호출
    -> json data 가 정상적으로 나오면 성공
