@@ -26,10 +26,11 @@ docker-compose up -d
 
 ## 테스트 방법 
 - src/main/resources/test.http 파일 참조
-0. (GET) http://localhost:8080 호출
+0. 프로젝트 빌드, .jar 파일 생성 확인 (./build/libs/*.jar)
+1. (GET) http://localhost:8080 호출
    -> hello 가 나오면 성공
-1. (POST) http://localhost:8080/user 호출
-2. (GET) http://localhost:8080/1 호출
+2. (POST) http://localhost:8080/user 호출
+3(GET) http://localhost:8080/1 호출
    -> json data 가 정상적으로 나오면 성공
     ```json
       {
